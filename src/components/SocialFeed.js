@@ -74,8 +74,8 @@ export default function SocialFeed({ posts }) {
                     {posts.post_data.map(post => (
                         <Card key={post.id} sx={{ marginBottom: 2 }}>
                             <CardHeader
-                                avatar={<Avatar alt={post.author} src={posts.avatar} />}
-                                title={post.author}
+                                avatar={<Avatar alt={posts.name} src={posts.avatar} />}
+                                title={posts.name}
                                 subheader={post.timestamp}
                             />
                             <CardContent>

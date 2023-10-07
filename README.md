@@ -2,78 +2,91 @@
 
 A responsive and dynamic portfolio website, built with React and MUI (formerly Material-UI) v5 for Computer Science students at UMass Lowell. The website is designed to be easily customizable, allowing students to quickly create a portfolio to showcase their skills and experiences.
 
-## Features
+![Demo](image.png)
 
-- **Dynamic Content**: The website's content is populated from a central `data` dictionary, making it easy to modify and extend.
-- **Responsive Design**: Thanks to MUI's grid system, the portfolio is mobile-friendly and looks great on devices of all sizes.
-- **Smooth Transitions**: Using the `framer-motion` library, the website offers fluid animations for content transitions.
+- Template inspired from W3Schools' [Portfolio Template](https://www.w3schools.com/howto/tryw3css_templates_cv.htm)
+- Resume template from UML Career Services for [Computer Science majors](https://www.uml.edu/docs/Effective-Resume-Guide-Rev1_tcm18-312086.pdf)
 
-## Getting Started
+## Tutorial 
 
-### Prerequisites
+This guide is for students who want to host their portfolio on the UML CS servers. This guide assumes you have a CS linux account on the UML CS servers. If you do not have a CS linux account, please contact the CS department.
 
-- Node.js
-- npm
+### Connect to UML CS Server & Install Node.js
 
-### Installation
+Connect to the UML CS servers using SSH. If you are not on campus wifi, then you will need to use the [UML VPN](https://www.uml.edu/it/services/get-connected/remote-access/). 
 
-1. Clone the repository:
-```
-git clone https://github.com/your_username_/project_name.git
+```bash
+ssh <cs-username-here>@cs.uml.edu
 ```
 
-2. Install NPM packages:
+Now that you are connected to the CS servers, you will need to install Node.js. We will be using nvm to install Node.js. 
+```bash
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
 ```
-cd project_name
+
+Source the bashrc file to use nvm.
+```bash
+source ~/.bashrc
+```
+
+Now that nvm is installed, we can install Node.js. We will be using Node.js v18.
+```bash
+nvm install v18
+```
+
+```bash
+nvm use v18
+```
+
+### Clone the Repository
+
+Clone the repository and install the dependencies.
+```bash
+git clone https://github.com/UMLCloudComputing/react-mui-resume
+```
+
+Change directory into the repository.
+```bash
+cd react-mui-resume
+```
+
+Install the JavaScript dependencies.
+```bash
 npm install
 ```
 
-3. Start the development server:
-```
-npm start
+### Build and Deploy to `public_html` Folder
+
+Build the project. This will create a `build` folder with the static HTML files.
+
+```bash
+npm run build
 ```
 
-The website will be available at http://localhost:3000. 
+Create a `public_html` folder in your home directory. Copy the contents of the `build` folder into the `public_html` folder.
+
+```bash
+mkdir ~/public_html/ && cp -r build/* ~/public_html/
+```
+
+Change the permissions of the `public_html` folder to `755`. This will allow the web server to access the files.
+
+```bash
+chmod -R 755 ~/public_html/
+```
+
+### View Your Portfolio
+
+You can now view your portfolio at `https://www.cs.uml.edu/~<cs username here>/`.
+
+This will show the default portfolio. You can now customize the portfolio to your liking.
 
 ## Customization
 
-To modify the content of the portfolio:
+To customize the portfolio, you can edit the `src/TEMPLATE.js` file. This file contains a JavaScript object with all the information for the portfolio. Feel free to edit it to your liking.
 
-1. Navigate to the `data` dictionary within the project.
-2. Adjust the fields as necessary to match your own details, experiences, skills, and social links.
-3. Save and restart the development server to see your changes.
-
-## Built With
-
-- [React](https://reactjs.org/)
-- [MUI v5](https://mui.com/)
-- [framer-motion](https://www.framer.com/api/motion/)
-
-## Contributing
-
-Contributions are what make the open-source community such an inspiring place to be. Any contributions you make are **greatly appreciated**.
-
-1. Fork the project
-2. Create your feature branch:
-
-    git checkout -b feature/AmazingFeature
-
-3. Commit your changes:
-
-    git commit -m 'Add some AmazingFeature'
-
-4. Push to the branch:
-
-    git push origin feature/AmazingFeature
-
-5. Open a pull request
+Additionally, if you are familiar with React, you can edit the React components in the `/src` folder and customize the portfolio even further using MUI components and styling.
 
 ## License
 
-Distributed under the MIT License. See `LICENSE` for more information.
-
-## Contact
-
-Your Name - your_email@gmail.com
-
-Project Link: [https://github.com/your_username_/project_name](https://github.com/your_username_/project_name)
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

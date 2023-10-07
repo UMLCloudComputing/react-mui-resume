@@ -86,32 +86,24 @@ const data = {
         post_data: [
             {
                 id: 1,
-                author: "John Doe",
-                avatar: "/path-to-avatar1.jpg",
                 timestamp: "2 hours ago",
                 description: "Enjoying a sunny day at the beach!",
                 image: "https://source.unsplash.com/random?wallpapers"
             },
             {
                 id: 2,
-                author: "Jane Smith",
-                avatar: "https://source.unsplash.com/random?wallpapers",
                 timestamp: "5 hours ago",
                 description: "Just finished reading this amazing book.",
                 type: "note",
             },
             {
                 id: 3,
-                author: "John Doe",
-                avatar: "/path-to-avatar1.jpg",
                 timestamp: "2 hours ago",
                 description: "Enjoying a sunny day at the beach!",
                 image: "https://source.unsplash.com/random?wallpapers"
             },
             {
                 id: 4,
-                author: "Jane Smith",
-                avatar: "https://source.unsplash.com/random?wallpapers",
                 timestamp: "5 hours ago",
                 description: "Just finished reading this amazing book.",
                 type: "note",
