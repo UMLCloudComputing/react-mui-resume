@@ -2,7 +2,7 @@
 
 A responsive and dynamic portfolio website, built with React and MUI (formerly Material-UI) v5 for Computer Science students at UMass Lowell. The website is designed to be easily customizable, allowing students to quickly create a portfolio to showcase their skills and experiences.
 
-![Demo](image.png)
+![Demo](./demo1.png)
 
 - Template inspired from W3Schools' [Portfolio Template](https://www.w3schools.com/howto/tryw3css_templates_cv.htm)
 - Resume template from UML Career Services for [Computer Science majors](https://www.uml.edu/docs/Effective-Resume-Guide-Rev1_tcm18-312086.pdf)
