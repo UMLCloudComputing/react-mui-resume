@@ -70,7 +70,7 @@ PUBLIC_URL=https://www.cs.uml.edu/~<cs-username-here>/ npm run build
 Copy the contents of the `build` folder into the `public_html` folder. This folder is used to host static files on the CS servers.
 
 ```bash
-mkdir ~/public_html/ && cp -r build/* ~/public_html/
+cp -r build/* ~/public_html/
 ```
 
 Change the permissions of the `public_html` folder to `755`. This will allow the web server to access the files.
