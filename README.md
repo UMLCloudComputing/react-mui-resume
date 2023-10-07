@@ -7,6 +7,8 @@ A responsive and dynamic portfolio website, built with React and MUI (formerly M
 - Template inspired from W3Schools' [Portfolio Template](https://www.w3schools.com/howto/tryw3css_templates_cv.htm)
 - Resume template from UML Career Services for [Computer Science majors](https://www.uml.edu/docs/Effective-Resume-Guide-Rev1_tcm18-312086.pdf)
 
+You can view a demo of the portfolio here: https://www.cs.uml.edu/~mmarwad/
+
 ## Tutorial 
 
 This guide is for students who want to host their portfolio on the UML CS servers. This guide assumes you have a CS linux account on the UML CS servers. If you do not have a CS linux account, please contact the CS department.
@@ -57,10 +59,10 @@ npm install
 
 ### Build and Deploy to `public_html` Folder
 
-Build the project. This will create a `build` folder with the static HTML files.
+Build the project. This will create a `build` folder with the static HTML files. Make sure to replace `cs-username-here` with your CS username. This is needed to set the `PUBLIC_URL` environment variable, which is used to set the base URL for the static files.
 
 ```bash
-npm run build
+PUBLIC_URL=https://www.cs.uml.edu/~<cs-username-here>/ npm run build
 ```
 
 Create a `public_html` folder in your home directory. Copy the contents of the `build` folder into the `public_html` folder.
@@ -77,7 +79,7 @@ chmod -R 755 ~/public_html/
 
 ### View Your Portfolio
 
-You can now view your portfolio at `https://www.cs.uml.edu/~<cs username here>/`.
+You can now view your portfolio at `https://www.cs.uml.edu/~<cs username here>/`. 
 
 This will show the default portfolio. You can now customize the portfolio to your liking.
 
