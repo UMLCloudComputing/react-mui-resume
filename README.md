@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+# React Material-UI Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A responsive and dynamic portfolio website, built with React and MUI (formerly Material-UI) v5 for Computer Science students at UMass Lowell. The website is designed to be easily customizable, allowing students to quickly create a portfolio to showcase their skills and experiences.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Dynamic Content**: The website's content is populated from a central `data` dictionary, making it easy to modify and extend.
+- **Responsive Design**: Thanks to MUI's grid system, the portfolio is mobile-friendly and looks great on devices of all sizes.
+- **Smooth Transitions**: Using the `framer-motion` library, the website offers fluid animations for content transitions.
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Prerequisites
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Node.js
+- npm
 
-### `npm test`
+### Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository:
+```
+git clone https://github.com/your_username_/project_name.git
+```
 
-### `npm run build`
+2. Install NPM packages:
+```
+cd project_name
+npm install
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Start the development server:
+```
+npm start
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The website will be available at http://localhost:3000. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Customization
 
-### `npm run eject`
+To modify the content of the portfolio:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Navigate to the `data` dictionary within the project.
+2. Adjust the fields as necessary to match your own details, experiences, skills, and social links.
+3. Save and restart the development server to see your changes.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Built With
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- [React](https://reactjs.org/)
+- [MUI v5](https://mui.com/)
+- [framer-motion](https://www.framer.com/api/motion/)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Contributing
 
-## Learn More
+Contributions are what make the open-source community such an inspiring place to be. Any contributions you make are **greatly appreciated**.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Fork the project
+2. Create your feature branch:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    git checkout -b feature/AmazingFeature
 
-### Code Splitting
+3. Commit your changes:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+    git commit -m 'Add some AmazingFeature'
 
-### Analyzing the Bundle Size
+4. Push to the branch:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+    git push origin feature/AmazingFeature
 
-### Making a Progressive Web App
+5. Open a pull request
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## License
 
-### Advanced Configuration
+Distributed under the MIT License. See `LICENSE` for more information.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Contact
 
-### Deployment
+Your Name - your_email@gmail.com
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Project Link: [https://github.com/your_username_/project_name](https://github.com/your_username_/project_name)
